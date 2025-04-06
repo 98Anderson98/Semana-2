@@ -1,0 +1,27 @@
+package Semana2;
+import java.util.Scanner;
+
+public class Persona {
+	    int edad;
+		public  void SaberSiesmayor(){
+			Scanner Scanner =new Scanner(System.in);
+			System.out.print("ingrese su edad:");
+			edad=Scanner.nextInt();
+			if(edad >= 18 ) {
+				System.out.println("Puedes ingresar");
+			}else{
+				System.out.println("No Puedes ingresar x kchuda");
+			}	
+			//Con operadores ternarios
+			//System.out.println(edad >= 18 ? "Puedes ingresar" : "No Puedes ingresar x kchuda");
+	
+		}
+		
+	public static void main(String[] args) {
+		
+		Persona Mayor = new Persona();
+		Mayor.SaberSiesmayor();
+
+	}
+
+}
